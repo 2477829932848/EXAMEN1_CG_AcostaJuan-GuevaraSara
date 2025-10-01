@@ -1,4 +1,11 @@
+
 import { Component } from '@angular/core';
+import { AccordionBasicDemo } from './componentes_home/accordion/accordion.component';
+import { ButtonBasicDemo } from './componentes_home/button/button.component';
+import { CardAdvancedDemo } from './componentes_home/cards/cards.component';
+import { ImageTemplateDemo } from './componentes_home/image/image.component';
+import { InputTextBasicDemo } from './componentes_home/input-text/input-text.component';
+import { MenubarTemplateDemo } from './componentes_home/menu-bar/menu-bar.component';
 
 @Component({
   selector: 'app-home',
