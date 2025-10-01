@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { ImageModule } from 'primeng/image';
 
 @Component({
-  selector: 'app-image',
-  imports: [],
-  templateUrl: './image.component.html',
-  styleUrl: './image.component.css'
+    selector: 'imagen',
+    templateUrl: './image.component.html',
+    standalone: true,
+    imports: [ImageModule]
 })
-export class ImageComponent {
-
-}
+export class ImageTemplateDemo {}

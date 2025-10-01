@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { AccordionModule } from 'primeng/accordion';
 
 @Component({
-  selector: 'app-accordion',
-  imports: [],
-  templateUrl: './accordion.component.html',
-  styleUrl: './accordion.component.css'
+    selector: 'accordion',
+    templateUrl: './accordion.component.html',
+    standalone: true,
+    imports: [AccordionModule]
 })
-export class AccordionComponent {
-
-}
+export class AccordionBasicDemo {}
