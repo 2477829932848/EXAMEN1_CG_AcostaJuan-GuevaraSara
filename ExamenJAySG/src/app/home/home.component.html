@@ -1,43 +1,24 @@
 <div class="home-container">
   <!-- Logo -->
-  <p-image src="assets/logo.png" alt="Logo empresa" width="150"></p-image>
+  <app-image-template-demo></app-image-template-demo>
 
-  <!-- Buscador -->
+  <!-- Buscador con input y botón -->
   <div class="search-bar">
-    <span class="p-float-label">
-      <input id="search" type="text" pInputText />
-      <label for="search">Buscar servicio</label>
-    </span>
-    <button pButton type="button" label="Buscar"></button>
+    <app-input-text-basic-demo></app-input-text-basic-demo>
+    <app-button-basic-demo></app-button-basic-demo>
   </div>
 
   <!-- Menú -->
-  <p-menubar [model]="items"></p-menubar>
+  <app-menubar-template-demo></app-menubar-template-demo>
 
-  <!-- Imagen principal -->
+  <!-- Imagen principal/banner -->
   <p-image src="assets/banner.png" alt="Banner principal" width="100%" height="250"></p-image>
 
   <!-- Servicios en Cards -->
   <div class="cards-container">
-    <p-card *ngFor="let s of services" [header]="s.title" style="width: 20rem; margin: 1rem;">
-      <ng-template pTemplate="header">
-        <p-image [src]="s.img" alt="{{s.title}}" width="100"></p-image>
-      </ng-template>
-      <p>{{s.desc}}</p>
-      <button pButton type="button" label="Conocer más +"></button>
-    </p-card>
+    <app-card-advanced-demo></app-card-advanced-demo>
   </div>
 
   <!-- Accordion -->
-  <p-accordion>
-    <p-accordionTab header="Desarrollo de software a la medida">
-      Creamos soluciones adaptadas a tus necesidades.
-    </p-accordionTab>
-    <p-accordionTab header="Desarrollo móvil">
-      Aplicaciones móviles para iOS y Android.
-    </p-accordionTab>
-    <p-accordionTab header="Soporte a aplicaciones">
-      Mantenimiento y optimización de sistemas existentes.
-    </p-accordionTab>
-  </p-accordion>
+  <app-accordion-basic-demo></app-accordion-basic-demo>
 </div>
