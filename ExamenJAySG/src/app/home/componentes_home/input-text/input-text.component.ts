@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-input-text',
-  imports: [],
-  templateUrl: './input-text.component.html',
-  styleUrl: './input-text.component.css'
+    selector: 'input-text-basic-demo',
+    templateUrl: './input-text-basic-demo.html',
+    standalone: true,
+    imports: [FormsModule, InputTextModule]
 })
-export class InputTextComponent {
-
+export class InputTextBasicDemo {
+    value!: string;
 }
