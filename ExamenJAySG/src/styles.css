@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+/* ================================
+   🎨 Variables globales
+   ================================ */
+:root {
+  --color-lila: #b695c0;     /* Color principal - navbar, botones secundarios */
+  --color-agua: #9ce0db;     /* Color secundario - botones principales */
+  --color-blanco: #ffffff;   /* Fondos y textos contrastados */
+
+  --font-family-1: 'Roboto', sans-serif;
+  --border-radius: 10px;
+}
+
+/* 🌐 Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-blanco);
+  font-family: var(--font-family-1);
+  color: #333;
+}
+
+/* 🔝 Navbar */
+.p-menubar {
+  background-color: var(--color-lila);
+  border-radius: 0;
+}
+
+.p-menubar .p-menuitem-link {
+  color: var(--color-blanco);
+  font-weight: 500;
+}
+
+.p-menubar .p-menuitem-link:hover {
+  background-color: var(--color-agua);
+}
+
+/* 📦 Cards */
+.p-card {
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.p-card .p-card-title {
+  color: var(--color-lila);
+  font-weight: 600;
+}
+
+.p-card .p-button {
+  background-color: var(--color-agua);
+  border: none;
+  color: #333;
+}
+
+.p-card .p-button:hover {
+  background-color: var(--color-lila);
+  color: var(--color-blanco);
+}
+
+/* 📂 Accordion */
+.p-accordion .p-accordion-header {
+  background-color: var(--color-lila);
+  color: var(--color-blanco);
+}
+
+.p-accordion .p-accordion-content {
+  background-color: #f7f7f7;
+  color: #444;
+}
