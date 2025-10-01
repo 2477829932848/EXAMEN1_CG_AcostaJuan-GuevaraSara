@@ -1,0 +1,17 @@
+.home-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.search-bar {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
