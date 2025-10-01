@@ -1,0 +1,16 @@
+.details-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  color: var(--color-lila);
+  margin-bottom: 1rem;
+}

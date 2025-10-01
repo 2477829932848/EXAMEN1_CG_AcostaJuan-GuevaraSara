@@ -1,1 +1,16 @@
-<p>details works!</p>
+<div class="details-container">
+  <!-- Toast -->
+  <p-toast></p-toast>
+
+  <!-- Encabezado -->
+  <h2>Ejemplo de notificaciones</h2>
+  <p>Haz clic en los botones para ver diferentes tipos de mensajes:</p>
+
+  <!-- Botones -->
+  <div class="btn-group">
+    <button pButton type="button" label="Success" severity="success" (click)="showSuccess()"></button>
+    <button pButton type="button" label="Info" severity="info" (click)="showInfo()"></button>
+    <button pButton type="button" label="Warn" severity="warning" (click)="showWarn()"></button>
+    <button pButton type="button" label="Error" severity="danger" (click)="showError()"></button>
+  </div>
+</div>
